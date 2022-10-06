@@ -11,7 +11,8 @@ export default class Dashboard extends Component {
         super(props);
 
         this.state = {
-            customer: "Dustin"
+            customer: "Dustin",
+            transactions: []
         }
     }
 
@@ -26,7 +27,21 @@ export default class Dashboard extends Component {
         }
 
         getAllData()
-            .then(data => console.log(data))
+            .then(data => {
+                let current_customer_transactions = [];
+
+                // Loop through data and only include transactions that are associated to the current customer
+                for(const transaction of data.data) {
+                    if(transaction.customer === this.state.customer) {
+                        current_customer_transactions.push(transaction);
+                    }
+                }
+
+                // Add the transactions of the current customer to state
+                this.setState({
+                    transactions: current_customer_transactions
+                })
+            })
 
     }
 
@@ -53,7 +68,7 @@ export default class Dashboard extends Component {
                             </Dropdown.Menu>
                         </Dropdown>
                     </Col>
-                    <Col></Col>
+                    <Col>Welcome back, {this.state.customer}</Col>
                 </Row>
                 <Row>
                     {/* Totals */}
@@ -62,7 +77,18 @@ export default class Dashboard extends Component {
                     {/* Sub totals */}
                 </Row>
                 <Row>
-                    {/* Transactions */}
+                    <Col>
+                        Past 3 months of transactions
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        {
+                            this.state.transactions.map(transaction => (
+                                <div key={transaction.id}>{transaction.name}</div>
+                            ))
+                        }
+                    </Col>
                 </Row>
             </Container>
         )
