@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 
+import Dashboard from './components/dashboard';
+
 function App() {
   return (
     <div>
@@ -12,8 +14,8 @@ function App() {
           </Container>
         </Navbar>
 
-        {/* Dashboard */}
-        Hello World
+        <Dashboard></Dashboard>
+
       </Container>
     </div>
   );
