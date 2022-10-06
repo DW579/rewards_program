@@ -6,6 +6,8 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 import data from '../data/data.json';
 
+import Transaction from "./transaction";
+
 export default class Dashboard extends Component {
     constructor(props) {
         super(props);
@@ -85,7 +87,12 @@ export default class Dashboard extends Component {
                     <Col>
                         {
                             this.state.transactions.map(transaction => (
-                                <div key={transaction.id}>{transaction.name}</div>
+                                <Transaction
+                                    key={transaction.id}
+                                    date={transaction.date}
+                                    name={transaction.name}
+                                    total={transaction.total}
+                                ></Transaction>
                             ))
                         }
                     </Col>
