@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Dropdown from 'react-bootstrap/Dropdown';
 
+import data from '../data/data.json';
+
 export default class Dashboard extends Component {
     constructor(props) {
         super(props);
@@ -11,6 +13,21 @@ export default class Dashboard extends Component {
         this.state = {
             customer: "Dustin"
         }
+    }
+
+    componentDidMount() {
+        // Simulate an asynchronous API call to fetch data
+        const getAllData = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(resolve({
+                    data: data
+                }), Math.random() * 1000)
+            })
+        }
+
+        getAllData()
+            .then(data => console.log(data))
+
     }
 
     handleCustomer(customer) {
