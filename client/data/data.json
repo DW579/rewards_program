@@ -1,0 +1,142 @@
+[
+    {
+        "id": 0,
+        "name": "REI",
+        "total": 125.00,
+        "customer": "Dustin",
+        "date": "October 1, 2022 00:00:01"
+    },
+    {
+        "id": 1,
+        "name": "Safeway",
+        "total": 50.00,
+        "customer": "Joe",
+        "date": "October 2, 2022 00:00:01"
+    },
+    {
+        "id": 2,
+        "name": "Target",
+        "total": 25.01,
+        "customer": "Dustin",
+        "date": "October 3, 2022 00:00:01"
+    },
+    {
+        "id": 3,
+        "name": "Walgreens",
+        "total": 67.92,
+        "customer": "Joe",
+        "date": "October 4, 2022 00:00:01"
+    },
+    {
+        "id": 4,
+        "name": "Safeway",
+        "total": 75.28,
+        "customer": "Dustin",
+        "date": "October 5, 2022 00:00:01"
+    },
+    {
+        "id": 5,
+        "name": "HomeGoods",
+        "total": 200.94,
+        "customer": "Joe",
+        "date": "October 6, 2022 00:00:01"
+    },
+    {
+        "id": 6,
+        "name": "Ross",
+        "total": 76.45,
+        "customer": "Dustin",
+        "date": "September 30, 2022 00:00:01"
+    },
+    {
+        "id": 7,
+        "name": "Safeway",
+        "total": 23.45,
+        "customer": "Joe",
+        "date": "September 20, 2022 00:00:01"
+    },
+    {
+        "id": 8,
+        "name": "Target",
+        "total": 29.84,
+        "customer": "Dustin",
+        "date": "September 18, 2022 00:00:01"
+    },
+    {
+        "id": 9,
+        "name": "HomeGoods",
+        "total": 100.45,
+        "customer": "Joe",
+        "date": "September 15, 2022 00:00:01"
+    },
+    {
+        "id": 10,
+        "name": "Safeway Gas",
+        "total": 42.95,
+        "customer": "Dustin",
+        "date": "September 12, 2022 00:00:01"
+    },
+    {
+        "id": 11,
+        "name": "Costco",
+        "total": 300.48,
+        "customer": "Joe",
+        "date": "September 10, 2022 00:00:01"
+    },
+    {
+        "id": 12,
+        "name": "Safeway",
+        "total": 4.23,
+        "customer": "Dustin",
+        "date": "September 9, 2022 00:00:01"
+    },
+    {
+        "id": 13,
+        "name": "Safeway",
+        "total": 84.01,
+        "customer": "Joe",
+        "date": "August 27, 2022 00:00:01"
+    },
+    {
+        "id": 14,
+        "name": "Jamba Juice",
+        "total": 14.23,
+        "customer": "Dustin",
+        "date": "August 22, 2022 00:00:01"
+    },
+    {
+        "id": 15,
+        "name": "Costco",
+        "total": 234.89,
+        "customer": "Joe",
+        "date": "August 18, 2022 00:00:01"
+    },
+    {
+        "id": 16,
+        "name": "Ross",
+        "total": 74.11,
+        "customer": "Dustin",
+        "date": "August 17, 2022 00:00:01"
+    },
+    {
+        "id": 17,
+        "name": "Safeway Gas",
+        "total": 74.87,
+        "customer": "Joe",
+        "date": "August 9, 2022 00:00:01"
+    },
+    {
+        "id": 18,
+        "name": "Target",
+        "total": 89.28,
+        "customer": "Dustin",
+        "date": "August 5, 2022 00:00:01"
+    },
+    {
+        "id": 19,
+        "name": "Safeway",
+        "total": 114.23,
+        "customer": "Joe",
+        "date": "August 2, 2022 00:00:01"
+    }
+]
